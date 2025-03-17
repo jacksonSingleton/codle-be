@@ -1,0 +1,39 @@
+{
+  "id": "codle-2025-03-17",
+  "title": "Temperature Converter",
+  "startingCode": {
+    "python": "'''\nTemperature Converter\n\nCreate a function that converts temperature from Fahrenheit to Celsius.\nThe formula is: celsius = (fahrenheit - 32) * 5/9\n\nThe starting code has some issues you need to fix. Good luck!\n'''\n\ndef convert_to_celsius(fahrenheit):\n    # Convert the temperature from Fahrenheit to Celsius\n    celsius = (fahrenheit - 32) * 9/5\n    \n    # Return the result\n    return celsius"
+  },
+  "testCases": [
+    {
+      "input": {
+        "fahrenheit": 32
+      },
+      "expected": 0.0
+    },
+    {
+      "input": {
+        "fahrenheit": 212
+      },
+      "expected": 100.0
+    },
+    {
+      "input": {
+        "fahrenheit": 68
+      },
+      "expected": 20.0
+    },
+    {
+      "input": {
+        "fahrenheit": -40
+      },
+      "expected": -40.0
+    },
+    {
+      "input": {
+        "fahrenheit": 98.6
+      },
+      "expected": 37.0
+    }
+  ]
+}
