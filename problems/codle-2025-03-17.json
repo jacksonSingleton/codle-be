@@ -1,5 +1,5 @@
 {
-  "id": "codle-2025-03-17",
+  "id": "codle-2025-03-18",
   "title": "Tip Calculator",
   "startingCode": {
     "python": "'''\nTip Calculator\n\nCreate a function that calculates the total bill after adding a tip.\nThe function should:\n1. Calculate the tip amount based on the bill and tip percentage\n2. Add the tip to the bill to get the total\n3. Round the result to 2 decimal places\n\nThe starting code has some issues you need to fix. Good luck!\n'''\n\ndef calculate_total(bill, tip_percent)\n    # Calculate the tip amount\n    tip = bill * (tip_percent / 100)\n    \n    # Add the tip to the bill\n    total = bil + tip\n    \n    # Round to 2 decimal places and return\n    return round(total, 2,)"
