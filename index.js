@@ -19,11 +19,6 @@ let lastCacheUpdate = null;
 async function getDailyProblem() {
   const now = new Date();
   
-  // Only reload if cache is null or older than 1 hour
-  if (dailyProblemCache && lastCacheUpdate && (now - lastCacheUpdate) < 3600000) {
-    return dailyProblemCache;
-  }
-
   try {
     const files = await fs.readdir(PROBLEMS_DIR);
     const problems = [];
@@ -37,7 +32,7 @@ async function getDailyProblem() {
     }
 
     // Sort problems by date
-    problems.sort((a, b) => new Date(b.datePublished) - new Date(a.datePublished));
+    problems.sort((a, b) => new Date(b.id.split('codle-')[1]) - new Date(a.id.split('codle-')[1]));
     
     // No problems found
     if (problems.length === 0) {
